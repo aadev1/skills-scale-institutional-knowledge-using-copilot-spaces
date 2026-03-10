@@ -37,6 +37,13 @@ Incident Communication
 - Expected timeline
 - Post-incident blameless retrospective scheduled
 
+## Customer Feedback Loop
+- Customer Success Manager collects and documents customer feedback and pain points
+- CSM presents summary to Product Manager in weekly/bi-weekly sync
+- Product Manager incorporates actionable feedback into backlog prioritization
+- PM tracks customer-reported issues on the risk register when they have schedule or scope impact
+
 ## Escalation Paths
 - Team-level -> PM -> Product Lead -> Sponsor
-- For security incidents, follow the security incident runbook and notify Security on-call
+- For security incidents, follow the security incident runbook and notify Security on-call (Security Specialist leads triage and coordinates remediation with Developers and PM)
+- For customer-impacting issues, Customer Success Manager escalates to PM and Product Manager; PM coordinates engineering response and communicates status back to CSM
