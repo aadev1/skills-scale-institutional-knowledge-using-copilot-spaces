@@ -17,11 +17,19 @@ Guidance for managing day-to-day execution and tracking progress toward project 
   - Require at least one approval before merging (or team-defined policy)
 
 ## Quality & Testing
-- Unit tests for new logic
-- Integration tests where applicable
-- End-to-end smoke tests for critical flows before release
-- Security scanning in CI
-- Manual QA for feature acceptance when needed
+- Unit tests for new logic (owned by Developers)
+- Integration tests where applicable (Developers + QA Engineer)
+- End-to-end smoke tests for critical flows before release (QA Engineer)
+- Security scanning in CI (Security Specialist configures; Developers resolve findings)
+- Manual QA for feature acceptance (QA Engineer signs off before moving to Done)
+- UX design review before closing UI-related stories (UX Designer)
+
+### QA Gates
+| Stage | Gate | Owner |
+|-------|------|-------|
+| In Review | Automated tests pass in CI | Developer / CI |
+| QA | Manual acceptance testing against acceptance criteria | QA Engineer |
+| Done | QA Engineer sign-off; no open P1/P2 defects | QA Engineer + PM |
 
 ## Reporting & Metrics
 - Track velocity and burndown
